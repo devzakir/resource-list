@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\LinkController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -31,6 +32,8 @@ Route::get('/dashboard', function () {
 
 Route::group(['middleware' => 'auth', 'prefix' => 'dashboard'], function () {
     Route::resource('collections', CollectionController::class);
+
+    Route::resource('links', LinkController::class);
 });
 
 require __DIR__ . '/auth.php';
