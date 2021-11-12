@@ -41,4 +41,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * User Has many collections
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function collections()
+    {
+        return $this->hasMany(Collection::class, 'owner_id');
+    }
 }
