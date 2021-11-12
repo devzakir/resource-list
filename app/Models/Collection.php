@@ -20,4 +20,14 @@ class Collection extends Model
     {
         return $this->belongsTo(User::class, 'owner_id');
     }
+
+    /**
+     * Collection has many links
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function links()
+    {
+        return $this->hasMany(Link::class);
+    }
 }
