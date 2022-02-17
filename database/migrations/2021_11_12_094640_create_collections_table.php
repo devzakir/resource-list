@@ -18,7 +18,8 @@ class CreateCollectionsTable extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->bigInteger('total_saves')->default(0);
-            $table->foreignId('owner_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('space_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('owner_id')->constrained('spaces')->onDelete('cascade');
             $table->string('short_link')->comment('Shareable short link');
             $table->timestamps();
         });

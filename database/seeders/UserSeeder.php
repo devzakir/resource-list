@@ -15,11 +15,18 @@ class UserSeeder extends Seeder
     public function run()
     {
         $data = [
-            'name' => 'Zakir Hossen',
-            'email' => 'web.zakirbd@gmail.com',
-            'password' => bcrypt('password')
+            [
+                'name' => 'Zakir Hossen',
+                'email' => 'web.zakirbd@gmail.com',
+                'password' => bcrypt('password')
+            ],
+            [
+                'name' => 'Developer Arif',
+                'email' => 'developer@mail.com',
+                'password' => bcrypt('password')
+            ],
         ];
 
-        User::create($data);
+        User::insert($data);
     }
 }
