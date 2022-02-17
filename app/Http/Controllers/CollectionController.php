@@ -118,4 +118,11 @@ class CollectionController extends Controller
         // return Inertia::render('Pages/Collection/Index.vue');
         return $collection;
     }
+
+    public function collectionWiseLinks(Collection $collection){
+        return inertia('Frontend/Links', [
+            'collection' => $collection,
+            'links' => $collection->links,
+        ]);
+    }
 }

@@ -62,7 +62,7 @@ class CollectionSeeder extends Seeder
             [
                 'name' => 'PHP',
                 'slug' => 'php',
-                'space_id' => 1,
+                'space_id' => 2,
                 'owner_id' => User::inRandomOrder()->value('id'),
                 'short_link' => 'https://zakirsoft.com/',
                 'created_at' => now()
@@ -70,7 +70,7 @@ class CollectionSeeder extends Seeder
             [
                 'name' => 'Laravel',
                 'slug' => 'laravel',
-                'space_id' => 1,
+                'space_id' => 2,
                 'owner_id' => User::inRandomOrder()->value('id'),
                 'short_link' => 'https://zakirsoft.com/',
                 'created_at' => now()
@@ -78,7 +78,7 @@ class CollectionSeeder extends Seeder
             [
                 'name' => 'Python',
                 'slug' => 'python',
-                'space_id' => 1,
+                'space_id' => 2,
                 'owner_id' => User::inRandomOrder()->value('id'),
                 'short_link' => 'https://zakirsoft.com/',
                 'created_at' => now()
@@ -86,7 +86,7 @@ class CollectionSeeder extends Seeder
             [
                 'name' => 'Nodejs',
                 'slug' => 'nodejs',
-                'space_id' => 1,
+                'space_id' => 2,
                 'owner_id' => User::inRandomOrder()->value('id'),
                 'short_link' => 'https://zakirsoft.com/',
                 'created_at' => now()
@@ -94,7 +94,7 @@ class CollectionSeeder extends Seeder
             [
                 'name' => 'Mysql',
                 'slug' => 'mysql',
-                'space_id' => 1,
+                'space_id' => 2,
                 'owner_id' => User::inRandomOrder()->value('id'),
                 'short_link' => 'https://zakirsoft.com/',
                 'created_at' => now()

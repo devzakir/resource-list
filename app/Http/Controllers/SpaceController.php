@@ -46,7 +46,12 @@ class SpaceController extends Controller
      */
     public function show(Space $space)
     {
-        //
+        $collections = $space->collections()->get();
+
+        return inertia('Frontend/Collections', [
+            'space' => $space,
+            'collections' => $collections,
+        ]);
     }
 
     /**
